@@ -40,6 +40,7 @@ def electricity(features):
     features_dataframe['day_cos'] = np.cos(2*np.pi*day_norm)
     features_dataframe['lag_1'] = features_dataframe['lag_5'] = features_dataframe['lag_60'] = features_dataframe['lag_1440'] = st.session_state["number"]
     features_dataframe['rolling_15min'] = features_dataframe['rolling_60min'] = features_dataframe['rolling_1hr'] = st.session_state["number"]
+    features_dataframe = features_dataframe.drop(["Time_sec", 'month', 'day'], axis=1)
     
     new_feature_order = ['Global_reactive_power', 'Voltage', 'Global_intensity',
        'Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3', 'year',
@@ -47,7 +48,7 @@ def electricity(features):
        'day_sin', 'day_cos', 'lag_1', 'lag_5', 'lag_60', 'lag_1440',
        'Rollling_15min', 'Rolling_60min', 'Rolling_1hr']
     features_dataframe = features_dataframe[new_feature_order]
-    features_dataframe = features_dataframe.drop(["Time_sec", 'month', 'day'], axis=1)
+    
     
     prediction = loaded_model.predict(features_dataframe)
     return prediction
@@ -81,6 +82,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
