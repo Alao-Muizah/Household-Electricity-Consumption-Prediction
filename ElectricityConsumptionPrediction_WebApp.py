@@ -15,9 +15,12 @@ import lightgbm
 import calendar
 from datetime import time
 from joblib import dump,load
+import os
 
 
-loaded_model = joblib.load("Electricity_model.joblib")
+BASE_DIR = os.path.dirname(__file__)
+MODEL_PATH = os.path.join(BASE_DIR, "Electricity_model.joblib")
+loaded_model = joblib.load(MODEL_PATH)
 
 
 def electricity(features):
@@ -78,6 +81,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
