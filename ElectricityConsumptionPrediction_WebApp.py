@@ -47,7 +47,7 @@ def electricity(features):
        'dayofweek', 'Time_sin', 'Time_cos', 'month_sin', 'month_cos',
        'day_sin', 'day_cos', 'lag_1', 'lag_5', 'lag_60', 'lag_1440',
        'Rollling_15min', 'Rolling_60min', 'Rolling_1hr']
-    features_dataframe = features_dataframe[new_feature_order]
+    
     
     
     prediction = loaded_model.predict(features_dataframe)
@@ -82,6 +82,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
