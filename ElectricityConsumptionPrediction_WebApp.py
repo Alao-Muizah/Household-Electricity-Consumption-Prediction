@@ -17,7 +17,7 @@ from datetime import time
 from joblib import dump,load
 
 
-loaded_model = load("Electricity_model.joblib")
+loaded_model = joblib.load("Electricity_model.joblib")
 
 
 def electricity(features):
@@ -78,6 +78,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
