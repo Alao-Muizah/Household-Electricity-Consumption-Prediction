@@ -13,7 +13,7 @@ Web app: Streamlit
 
 Usage
 
-Clone the repo: git clone <your-repo-url>
+Clone the repo: git clone <https://github.com/Alao-Muizah/Household-Electricity-Consumption-Prediction>
 
 Install dependencies: pip install -r requirements.txt
 
