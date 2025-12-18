@@ -17,7 +17,7 @@ Clone the repo: git clone <your-repo-url>
 
 Install dependencies: pip install -r requirements.txt
 
-Run the app: streamlit run app.py
+Run the app: ElectricityConsumptionPrediction_WebApp.py
 
 Enter your electricity readings and view the predicted Global Active Power.
 
@@ -31,6 +31,4 @@ link to the deployed streamlit app : https://household-electricity-consumption-p
 
 Download Dataset here : https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption
 
-License
-
-MIT License (or your preferred license)
+License : MIT License 
