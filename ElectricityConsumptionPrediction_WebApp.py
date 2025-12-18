@@ -63,7 +63,7 @@ def main():
     Sub_metering_1 = st.number_input("Energy used by kitchen appliances (kWh)", min_value=0, max_value=1000, value=0)
     Sub_metering_2 = st.number_input("Energy used by laundry room appliances (kWh)", min_value=0, max_value=1000, value=0)
     Sub_metering_3 = st.number_input("Energy used by water heater & AC (kWh)", min_value=0, max_value=1000, value=0)
-    Time_sec = st.time_input("Select a time:", value=time(12, 0), key='Timess')
+    Time_sec = st.time_input("Select a time:", key='Timess')
     selected_date = st.date_input("Select a date")
     year = selected_date.year 
     dayofweek = selected_date.weekday()
@@ -82,6 +82,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
