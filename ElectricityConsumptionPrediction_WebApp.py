@@ -58,7 +58,7 @@ def main():
     st.title("Household Electric Power Consumption Prediction Web App")
     Global_reactive_power = 0.13 
     Voltage = st.number_input("Enter voltage value", min_value=0, max_value=300, value=220)
-    Global_intensity = st.slider("Enter Global Intensity (A)", 0.4,47.0,5.3)  
+    Global_intensity = st.number_input("Enter Global Intensity (A)")  
         
     Sub_metering_1 = st.number_input("Energy used by kitchen appliances (kWh)", min_value=0, max_value=1000, value=0)
     Sub_metering_2 = st.number_input("Energy used by laundry room appliances (kWh)", min_value=0, max_value=1000, value=0)
@@ -82,6 +82,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
 
 
