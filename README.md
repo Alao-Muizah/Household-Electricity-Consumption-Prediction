@@ -11,16 +11,6 @@ Python: pandas, numpy, scikit-learn, lightgbm, joblib, matplotlib
 
 Web app: Streamlit
 
-Usage
-
-Clone the repo: git clone <your-repo-url>
-
-Install dependencies: pip install -r requirements.txt
-
-Run the app: streamlit run app.py
-
-Enter your electricity readings and view the predicted Global Active Power.
-
 Dataset:
 
 Based on Individual Household Electric Power Consumption Dataset
