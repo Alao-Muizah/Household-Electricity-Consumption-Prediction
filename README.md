@@ -1,4 +1,4 @@
-# Household-Electricity-Consumption-Prediction
+# Household-Electricity-Consumption-Prediction-Model
 
 Household Electric Power Consumption Prediction Web App
 Overview
